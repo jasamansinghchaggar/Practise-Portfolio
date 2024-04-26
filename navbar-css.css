@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Questrial&display=swap');
+
+:root {
+    --primary-color: #233b3b;
+    /* tropical navy */
+    --secondary-color: #ead5c5;
+    /* sand */
+    --font-color: #e14b26;
+    /* flame red */
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    height: 8vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar .navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-logo {
+    padding-left: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Italiana", sans-serif;
+    font-size: 35px;
+}
+
+.navbar .navbar-logo a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .navbar-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    margin-right: 2rem;
+    font-size: 17px;
+}
+
+.navbar .navbar-menu ul li a {
+    text-decoration: none;
+    color: var(--font-color);
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    padding: 15px 20px;
+}
+
+.navbar .navbar-menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    background-color: var(--font-color);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar .navbar-menu ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar-toggle {
+    display: none;
+    /* Hide by default on larger screens */
+    cursor: pointer;
+    padding: 15px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--font-color);
+    margin: 5px 0;
+    transition: 0.4s;
+}
+@media screen and (max-width: 1100px) and (min-width: 801px){
+    .navbar .navbar-menu ul {
+        font-size: 15px;
+    }
+    .navbar .navbar-logo {
+        font-size: 25px;
+    }
+    .navbar .navbar-menu ul li a {
+        padding: 10px 15px;
+    }
+}
+
+/* Styles for mobile */
+@media screen and (max-width: 800px) {
+    .navbar .navbar-menu {
+        display: none;
+        /* Hide the menu by default on mobile */
+    }
+
+    .navbar .navbar-logo {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .navbar .navbar-toggle {
+        display: block;
+    }
+
+    .navbar .navbar-menu {
+        display: none;
+        /* Hide menu by default on mobile */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--primary-color);
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar .navbar-menu ul {
+        flex-direction: column;
+    }
+
+    .navbar .navbar-menu ul li {
+        margin-top: 10px;
+    }
+}
+
+/* Styles for menu toggle animation */
+.navbar-toggle.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggle.open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* side menu css*/
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hide the menu off-screen */
+    width: 300px;
+    height: 100vh;
+    background-color: var(--primary-color);
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.side-menu.open {
+    left: 0; /* Slide the menu in when open */
+}
+
+.side-menu ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.side-menu ul li {
+    padding: 15px;
+}
+
+.side-menu ul li a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Overlay to cover the content when menu is open */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.open {
+    display: block;
+}
+
+

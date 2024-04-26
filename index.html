@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasaman - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar-css.css">
+    <link rel="stylesheet" href="home-section.css">
+</head>
+
+<body>
+    <div class="overlay" onclick="toggleMenu()"></div>
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html">Jasaman's Portfolio</a>
+        </div>
+        <div class="navbar-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Learnings</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Learnings</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="home-section">
+        <div class="home-section-content">
+            <h1>I'm <div>Jasaman Singh</div></h1>
+            <p>I am a CSE Student</p>
+            <span id="element"></span>
+        </div>
+        <div class="home-section-image">
+            <img src="/material-images/My-image.webp" alt="">
+        </div>
+    </section>
+
+    <script src="script-navbar.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Welcome</i> to my Portfolio'], typeSpeed: 50, loop: true
+        });
+    </script>
+</body>
+
+</html>
