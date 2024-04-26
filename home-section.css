@@ -1,4 +1,5 @@
 .home-section {
+    box-sizing: border-box;
     width: 100vw;
     height: auto;
     display: flex;

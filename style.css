@@ -10,8 +10,27 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding-top: 8vh;
     box-sizing: border-box;
     font-family: "Questrial", sans-serif;
     background-color: var(--secondary-color);
+    overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-color); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color); 
+    border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--font-color);
 }

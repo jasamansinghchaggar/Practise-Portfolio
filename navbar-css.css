@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Questrial&display=swap');
 
 .navbar {
+    position: fixed; 
+    top: 0; 
     background-color: var(--primary-color);
     height: 8vh;
     width: 100vw;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-
+    z-index: 1000; 
+    box-shadow: 1px 5px 5px rgb(35, 59, 59, 0.3);
 }
 
 .navbar .navbar-menu {
@@ -68,7 +71,6 @@
 
 .navbar-toggle {
     display: none;
-    /* Hide by default on larger screens */
     cursor: pointer;
     padding: 15px;
 }
@@ -92,11 +94,10 @@
     }
 }
 
-/* Styles for mobile */
+
 @media screen and (max-width: 800px) {
     .navbar .navbar-menu {
         display: none;
-        /* Hide the menu by default on mobile */
     }
 
     .navbar .navbar-logo {
@@ -110,7 +111,6 @@
 
     .navbar .navbar-menu {
         display: none;
-        /* Hide menu by default on mobile */
         position: absolute;
         top: 100%;
         left: 0;
@@ -128,7 +128,7 @@
     }
 }
 
-/* Styles for menu toggle animation */
+
 .navbar-toggle.open .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
@@ -142,12 +142,10 @@
 }
 
 
-/* side menu css*/
-
 .side-menu {
     position: fixed;
     top: 0;
-    left: -300px; /* Initially hide the menu off-screen */
+    left: -300px; 
     width: 300px;
     height: 100vh;
     background-color: var(--primary-color);
@@ -156,7 +154,7 @@
 }
 
 .side-menu.open {
-    left: 0; /* Slide the menu in when open */
+    left: 0; 
 }
 
 .side-menu ul {
@@ -174,7 +172,6 @@
     font-weight: bold;
 }
 
-/* Overlay to cover the content when menu is open */
 .overlay {
     display: none;
     position: fixed;
