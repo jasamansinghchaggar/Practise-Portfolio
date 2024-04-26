@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Questrial&display=swap');
 
-:root {
-    --primary-color: #233b3b;
-    /* tropical navy */
-    --secondary-color: #ead5c5;
-    /* sand */
-    --font-color: #e14b26;
-    /* flame red */
-}
-
 .navbar {
     background-color: var(--primary-color);
     height: 8vh;

@@ -1,9 +1,12 @@
 /* Common CSS */
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
-/* :root {
-
-} */
+:root {
+    --primary-color: #233b3b;
+    --secondary-color: #ead5c5;
+    --font-color: #e14b26;
+    --background-color: #edb1a3;
+}
 
 body {
     margin: 0;
