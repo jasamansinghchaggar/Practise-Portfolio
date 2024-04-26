@@ -25,19 +25,20 @@
         </div>
         <div class="navbar-menu">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#learnings">Learnings</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" onclick="smoothScroll('home', event)">Home</a></li>
+                <li><a href="#about" onclick="smoothScroll('about', event)">About</a></li>
+                <li><a href="#learnings" onclick="smoothScroll('learnings', event)">Learnings</a></li>
+                <li><a href="#contact" onclick="smoothScroll('contact')">Contact</a></li>
+
             </ul>
         </div>
     </nav>
     <div class="side-menu" id="sideMenu">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#learnings">Learnings</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" onclick="smoothScroll('home', event)">Home</a></li>
+            <li><a href="#about" onclick="smoothScroll('about', event)">About</a></li>
+            <li><a href="#learnings" onclick="smoothScroll('learnings', event)">Learnings</a></li>
+            <li><a href="#contact" onclick="smoothScroll('contact', event)">Contact</a></li>
         </ul>
     </div>
 
@@ -83,7 +84,7 @@
         </div>
     </section>
 
-    <script src="script-navbar.js"></script>
+    <script src="main-script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {

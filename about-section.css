@@ -5,6 +5,7 @@
     width: 100vw;
     padding: 5px 20px;
     color: var(--primary-color);
+    background-color: var(--background-color);
 }
 
 .about-section .about-section-content h1 {
@@ -30,3 +31,10 @@
     word-spacing: 6px;
     text-align: justify;
 }
+
+@media screen and (max-width: 800px) {
+    .about-section .internal-para {
+        word-spacing: normal;
+    }
+}
+
