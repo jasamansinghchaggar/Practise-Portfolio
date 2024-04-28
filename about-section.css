@@ -1,7 +1,7 @@
 .about-section {
     display: flex;
     box-sizing: border-box;
-    height: 92vh;
+    height: auto;
     width: 100vw;
     padding: 5px 20px;
     color: var(--primary-color);

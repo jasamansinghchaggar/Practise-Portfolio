@@ -15,11 +15,12 @@ body {
     font-family: "Questrial", sans-serif;
     background-color: var(--secondary-color);
     overflow-x: hidden;
+    font-size: 62.5%;
 }
 
 
 ::-webkit-scrollbar {
-    width: 8px; 
+    width: 0.8rem; 
 }
 
 ::-webkit-scrollbar-track {
@@ -28,7 +29,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background: var(--primary-color); 
-    border-radius: 5px; 
+    border-radius: 0.5rem; 
 }
 
 ::-webkit-scrollbar-thumb:hover {

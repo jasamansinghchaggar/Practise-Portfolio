@@ -8,13 +8,13 @@
 }
 
 .home-section .home-section-content {
-    line-height: 6px;
+    line-height: 0.6rem;
     display: list-item;
     list-style-type: none;
     box-sizing: border-box;
     color: var(--font-color);
     width: 50%;
-    margin: auto 20px;
+    margin: auto 4rem;
 }
 
 .home-section .home-section-image {
@@ -22,18 +22,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 35px;
+    padding: 3.5rem;
 }
 
 .home-section .home-section-image img {
-    width: 500px;
+    width: 30rem;
 }
 
 .home-section .home-section-content h1 {
-    font-size: 65px;
+    font-size: 4rem;
     font-weight: 700;
     display: flex;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .home-section .home-section-content h1 div {
@@ -43,11 +43,11 @@
 
 #element,
 .home-section .home-section-content span {
-    font-size: 35px;
+    font-size: 2.5rem;
 }
 
 .home-section .home-section-content p {
-    font-size: 35px;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 
@@ -65,15 +65,23 @@
         width: 100%;
         padding: 50px 0px;
     }
-}
+
+    .home-section .home-section-image img {
+        width: 50rem;
+    }
+    
+    /* body {
+        font-size: 55%;
+    };*/
+} 
 
 @media screen and (max-width: 800px) {
     .home-section .home-section-content {
-        padding: 0 30%;
+        padding: 0 10%;
     }
 
     .home-section .home-section-content h1 {
-        font-size: 2rem;
+        font-size: 7em;
     }
 
     #element,
@@ -87,25 +95,30 @@
     .home-section .home-section-image img {
         width: 300px;
     }
+
+    /* body {
+        font-size: 45%;
+    }; */
 }
 
 
 @media screen and (max-width: 450px) {
     .home-section .home-section-content {
         padding: 0 20%;
+        padding-bottom: 10rem;
     }
 
     .home-section .home-section-content h1 {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
 
     #element,
     .home-section .home-section-content span {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .home-section .home-section-content p {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .home-section .home-section-image img {
         width: 300px;
