@@ -16,6 +16,7 @@ body {
     background-color: var(--secondary-color);
     overflow-x: hidden;
     font-size: 62.5%;
+    scroll-behavior:smooth;
 }
 
 

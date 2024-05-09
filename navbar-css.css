@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Questrial&display=swap');
 
 .navbar {
-    position: fixed; 
-    top: 0; 
+    position: fixed;
+    top: 0;
     background-color: var(--primary-color);
     height: 8vh;
     width: 100vw;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    z-index: 1000; 
+    z-index: 1000;
     box-shadow: 1px 5px 5px rgb(35, 59, 59, 0.3);
 }
 
@@ -82,13 +82,16 @@
     margin: 5px 0;
     transition: 0.4s;
 }
-@media screen and (max-width: 1100px) and (min-width: 801px){
+
+@media screen and (max-width: 1100px) and (min-width: 801px) {
     .navbar .navbar-menu ul {
         font-size: 15px;
     }
+
     .navbar .navbar-logo {
         font-size: 25px;
     }
+
     .navbar .navbar-menu ul li a {
         padding: 10px 15px;
     }
@@ -145,7 +148,7 @@
 .side-menu {
     position: fixed;
     top: 0;
-    left: -300px; 
+    left: -300px;
     width: 300px;
     height: 100vh;
     background-color: var(--primary-color);
@@ -154,7 +157,7 @@
 }
 
 .side-menu.open {
-    left: 0; 
+    left: 0;
 }
 
 .side-menu ul {
@@ -170,6 +173,7 @@
     color: var(--font-color);
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .overlay {
@@ -187,4 +191,16 @@
     display: block;
 }
 
+@media screen and (max-width: 450px) {
+    .navbar .navbar-logo {
+        font-size: 25px;
+    }
 
+    .navbar .navbar-menu ul {
+        font-size: 13px;
+    }
+
+    .navbar .navbar-menu ul li a {
+        padding: 10px 15px;
+    }
+}
