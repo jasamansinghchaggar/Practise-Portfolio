@@ -1,4 +1,58 @@
 .learnings-section {
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 5px 20px;
+}
+
+.learnings-section .main-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.learnings-section .cards-container {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.learnings-section .cards-container .card {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    border: 0.5px solid var(--primary-color);
+    margin: 0 1.5rem;
+    height: fit-content;
+    width: fit-content;
+}
+
+.learnings-section .cards-container .card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 7px 7px 0px var(--font-color);
+    transition: all 0.3s ease;
+}
+
+.learnings-section .cards-container .card .card-image {
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.learnings-section .cards-container .card img {
+    width: 80%;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.learnings-section .cards-container .card .card-content {
+    padding: 1rem;
+    color: var(--secondary-color);
+    font-size: 1rem;
 }
