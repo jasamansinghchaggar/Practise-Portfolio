@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="navbar-css.css">
     <link rel="stylesheet" href="home-section.css">
     <link rel="stylesheet" href="about-section.css">
+    <link rel="stylesheet" href="learnings-section.css">
 </head>
 
 <body>
     <div class="overlay" onclick="toggleMenu()"></div>
 
+    <!-- dextop: navigation bar -->
     <nav class="navbar">
         <div class="navbar-logo">
             <a href="index.html">Jasaman's Portfolio</a>
@@ -35,27 +37,38 @@
             </ul>
         </div>
     </nav>
+
+    <!-- mobile: navigation bar -->
     <div class="side-menu" id="sideMenu">
         <ul>
             <li>
-                <i class="bi bi-house"></i>
-                <a href="#home" onclick="smoothScroll('home', event)">Home</a>
+                <a href="#home" onclick="smoothScroll('home', event)">
+                    <i class="bi bi-house"></i>
+                    Home
+                </a>
             </li>
             <li>
-                <i class="bi bi-info-circle"></i>
-                <a href="#about" onclick="smoothScroll('about', event)">About</a>
+                <a href="#about" onclick="smoothScroll('about', event)">
+                    <i class="bi bi-info-circle"></i>
+                    About
+                </a>
             </li>
             <li>
-                <i class="bi bi-book"></i>
-                <a href="#learnings" onclick="smoothScroll('learnings', event)">Learnings</a>
+                <a href="#learnings" onclick="smoothScroll('learnings', event)">
+                    <i class="bi bi-book"></i>
+                    Learnings
+                </a>
             </li>
             <li>
-                <i class="bi bi-envelope"></i>
-                <a href="#contact" onclick="smoothScroll('contact', event)">Contact</a>
+                <a href="#contact" onclick="smoothScroll('contact', event)">
+                    <i class="bi bi-envelope"></i>
+                    Contact
+                </a>
             </li>
         </ul>
     </div>
 
+    <!-- home section -->
     <section id="home" class="home-section">
         <div class="home-section-content">
             <h1>I'm <div>Jasaman Singh</div>
@@ -68,6 +81,7 @@
         </div>
     </section>
 
+    <!-- about section -->
     <section id="about" class="about-section">
         <div class="about-section-content">
             <h1 class="main-heading">About Jasaman</h1>
@@ -97,6 +111,12 @@
         </div>
     </section>
 
+    <!-- learnings section -->
+    <section id="learnings" class="learnings-section">
+        
+    </section>
+
+    <!-- scripts -->
     <script src="main-script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
