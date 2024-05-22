@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jasaman - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar-css.css">
     <link rel="stylesheet" href="home-section.css">
@@ -35,10 +37,22 @@
     </nav>
     <div class="side-menu" id="sideMenu">
         <ul>
-            <li><a href="#home" onclick="smoothScroll('home', event)">Home</a></li>
-            <li><a href="#about" onclick="smoothScroll('about', event)">About</a></li>
-            <li><a href="#learnings" onclick="smoothScroll('learnings', event)">Learnings</a></li>
-            <li><a href="#contact" onclick="smoothScroll('contact', event)">Contact</a></li>
+            <li>
+                <i class="bi bi-house"></i>
+                <a href="#home" onclick="smoothScroll('home', event)">Home</a>
+            </li>
+            <li>
+                <i class="bi bi-info-circle"></i>
+                <a href="#about" onclick="smoothScroll('about', event)">About</a>
+            </li>
+            <li>
+                <i class="bi bi-book"></i>
+                <a href="#learnings" onclick="smoothScroll('learnings', event)">Learnings</a>
+            </li>
+            <li>
+                <i class="bi bi-envelope"></i>
+                <a href="#contact" onclick="smoothScroll('contact', event)">Contact</a>
+            </li>
         </ul>
     </div>
 
@@ -87,7 +101,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['<i>Welcome</i> to my Portfolio'], typeSpeed: 50, loop: true
+            strings: ['<i>Welcome</i> to my Portfolio'], typeSpeed: 50
         });
     </script>
 </body>

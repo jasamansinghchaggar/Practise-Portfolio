@@ -105,11 +105,16 @@
 @media screen and (max-width: 450px) {
     .home-section .home-section-content {
         padding: 0 20%;
-        padding-bottom: 10rem;
+        padding-bottom: 15rem;
     }
 
     .home-section .home-section-content h1 {
         font-size: 1.5rem;
+    }
+
+    .home-section .home-section-content h1,
+    .home-section .home-section-content div {
+        gap: 0.35rem;
     }
 
     #element,

@@ -4,6 +4,12 @@ function toggleMenu() {
     sideMenu.classList.toggle('open');
     overlay.classList.toggle('open');
 }
+var menuLinks = document.querySelectorAll('#sideMenu a');
+menuLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+        toggleMenu();
+    });
+});
 
 function smoothScroll(targetId) {
     event.preventDefault();
